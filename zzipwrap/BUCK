@@ -1,0 +1,25 @@
+filegroup(
+  name = 'config',
+  srcs = [
+    'Makefile.am',
+    'Makefile.in',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+cxx_binary(
+  name = 'zzipwrap',
+  header_namespace = '',
+  headers = [
+    'wrap.h'
+  ],
+  srcs = [
+    'wrap.c',
+    'zzipwrap.c',
+  ],
+  deps = [
+    '//:zzip',
+  ],
+)

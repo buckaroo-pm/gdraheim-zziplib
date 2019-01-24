@@ -1,0 +1,30 @@
+filegroup(
+  name = 'config',
+  srcs = [
+    'Makefile.am',
+    'Makefile.in',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+cxx_binary(
+  name = 'zzipself',
+  srcs = [
+    'zzipself.c',
+  ],
+  deps = [
+    '//:zzip',
+  ],
+)
+
+cxx_binary(
+  name = 'zzipsetstub',
+  srcs = [
+    'zzipsetstub.c',
+  ],
+  deps = [
+    '//:zzip',
+  ],
+)

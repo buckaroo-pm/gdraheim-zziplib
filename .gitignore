@@ -3,3 +3,10 @@
 Makefile
 build
 *-linux-*
+
+.buckd
+buck-out
+.buckconfig.local
+.buckconfig.d
+buckaroo
+buckaroo_macros.bzl
