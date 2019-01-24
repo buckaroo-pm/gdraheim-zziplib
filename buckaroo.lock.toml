@@ -1,4 +1,4 @@
-manifest = "13d4ae4a75c8e143536a8ae662559235753d93ec618ecd82afe440ca983fd748"
+manifest = "2711c206a53a3d68c114990066518269ca65ea5406a05acaa3939e3a6f06e327"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/madler-zlib"
